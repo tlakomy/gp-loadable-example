@@ -2,7 +2,7 @@
   "name": "react-loadable-example",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Tomasz Lakomy <tomasz.lakomy@grandparade.co.uk>",
+  "author": "Tomasz Lakomy <tlakomy90@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server"
@@ -15,7 +15,7 @@
     "moment": "^2.18.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-loadable": "^3.0.1"
+    "react-loadable": "^4.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",

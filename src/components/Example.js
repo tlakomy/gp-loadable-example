@@ -4,14 +4,14 @@ import Loading from './Loading';
 
 const LoadableAwesome = Loadable({
   loader: () => import('./Awesome'),
-  LoadingComponent: Loading
+  loading: Loading
 });
 
 export default class Example extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      time: 'Time unknown',
+      time: 'Moment.js not loaded :(',
       reactStatus: 'React not loaded :(',
       jqueryStatus: 'jQuery not loaded :(',
       lodashStatus: 'lodash not loaded :(',
@@ -23,7 +23,7 @@ export default class Example extends React.Component {
   getCurrentDate() {
     import('moment').then((moment) => (
         this.setState({
-          time: moment().format()
+          time: 'Current time: ' + moment().format()
         })
       )).catch(function(err) {
         console.log('Failed to load moment', err);
