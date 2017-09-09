@@ -33,7 +33,7 @@ export default class Example extends React.Component {
   getReact() {
     import('react').then(() => (
         this.setState({
-          reactStatus: 'react loaded!'
+          reactStatus: 'React loaded!'
         })
       )).catch(function(err) {
         console.log('Failed to load react', err);
@@ -43,7 +43,7 @@ export default class Example extends React.Component {
   getjQuery() {
     import('jquery').then(() => (
         this.setState({
-          jqueryStatus: 'jquery loaded!'
+          jqueryStatus: 'jQuery loaded!'
         })
       )).catch(function(err) {
         console.log('Failed to load jquery', err);
@@ -63,7 +63,7 @@ export default class Example extends React.Component {
   getAngular() {
     import('angular').then(() => (
         this.setState({
-          angularStatus: 'angular loaded!'
+          angularStatus: 'Angular loaded!'
         })
       )).catch(function(err) {
         console.log('Failed to load angular', err);
