@@ -5,6 +5,6 @@ import $ from 'jquery';
 import React from 'react';
 
 export default function Awesome() {
-  return <div className="awesome">You needed 563kB to load this div, what is *wrong* with you?!</div>
+  return <div className="awesome">You needed 568kB to load this div, what is *wrong* with you?!</div>
 }
 
